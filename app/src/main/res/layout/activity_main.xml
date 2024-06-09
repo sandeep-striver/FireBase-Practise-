@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupbackground"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="'Hello, Welcome to sign Up Page'"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        tools:ignore="VisualLintBounds">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textusername"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/textbackgr"
+            android:hint="User Name"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/baseline_email_24"
+           tools:ignore="VisualLintBounds">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textbackgr"
+            android:hint="Email id"
+            tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:endIconMode="password_toggle"
+        tools:ignore="VisualLintBounds">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textbackgr"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/baseline_perm_identity_24"
+        tools:ignore="VisualLintBounds">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textuniqueid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textbackgr"
+
+            android:hint="unique id"
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal_700"
+        android:text="Sign in"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+</LinearLayout>
